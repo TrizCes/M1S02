@@ -10,9 +10,9 @@ Utilize prompt para solicitar a idade e alert para exibir a classificação.
 Realize o commit do exercício resolvido.
 */
 
-let idade = prompt('Qual é sua idade');
+let idade = parseInt(prompt('Qual é sua idade'));
 
-if (idade <= 15) {
+if (idade >= 0 && idade <= 15) {
   alert('Jovens');
 } else if (idade >= 16 && idade <= 64) {
   alert('Adultos');
