@@ -29,4 +29,3 @@ if (isNaN(inicial) || isNaN(raiz)) {
 
 console.log(progressao.join(', '));
 alert(progressao.join(', '));
-//(progressao.join(', '));
