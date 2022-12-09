@@ -12,15 +12,18 @@ dica: de uma olhadinha no for.
 Realize o commit do exercício resolvido.
 */
 
-let multiplicador = prompt('Você gostaria de saber a tabuada de qual numero?');
+let multiplicador = parseInt(prompt('Você gostaria de saber a tabuada de qual numero?'));
 let tabuada = [];
 
-for (i = 0; i <= 10; i++) {
-  let resultadoTabuada = multiplicador * i;
-  tabuada.push(`${multiplicador}X${i}=${resultadoTabuada}`);
-}
+if (isNaN(multiplicador)) {
+  alert(`Digite valor valido, apenas numeros.`);
+} else {
+  for (i = 0; i <= 10; i++) {
+    let resultadoTabuada = multiplicador * i;
+    tabuada.push(`${multiplicador}X${i}=${resultadoTabuada}`);
+  }
 
-alert(`
+  alert(`
   ${tabuada[0]}
   ${tabuada[1]}
   ${tabuada[2]}
@@ -32,3 +35,4 @@ alert(`
   ${tabuada[8]}
   ${tabuada[9]}
   ${tabuada[10]}`);
+}
