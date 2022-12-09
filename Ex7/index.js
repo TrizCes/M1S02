@@ -14,14 +14,12 @@ function prime(i) {
   return dividers;
 }
 
-let numberOfPrimes = 1;
+let numberOfPrimes = 0;
 
 for (i = 0; i <= 1000; i++) {
   if (prime(i) === 2) {
     console.log(i);
     numberOfPrimes++;
-  } else if (i === 1) {
-    console.log(i);
   }
 }
 console.log(`Existem ${numberOfPrimes} numeros primos, entre 0 e 1000`);
