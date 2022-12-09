@@ -12,7 +12,6 @@ let raiz = prompt('Digite um número para a raiz da Progressão Aritmética:');
 let progressao = [];
 
 function progressaoAritmética(inicial, raiz) {
-  console.log(inicial);
   progressao.push(inicial);
   return inicial + raiz;
 }
@@ -29,5 +28,5 @@ if (isNaN(inicial) || isNaN(raiz)) {
 }
 
 console.log(progressao.join(', '));
-
+alert(progressao.join(', '));
 //(progressao.join(', '));
