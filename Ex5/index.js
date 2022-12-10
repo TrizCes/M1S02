@@ -8,12 +8,12 @@ Realize o commit do exercício resolvido.
 let number = prompt('Digite um número');
 let total = 0;
 let pares = 0;
-let impares = 1; //sempre começa com 1 pois qualquer numero maior que 0 é divisivel por 1;
+let impares = 0;
 
 if (isNaN(number)) {
   alert('Digite um número válido.');
 } else if (number > 1) {
-  for (i = 2; i <= number; i++) {
+  for (i = 0; i <= number; i++) {
     total = i % 2;
     if (total === 0) {
       pares += 1;
