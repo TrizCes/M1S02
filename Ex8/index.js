@@ -28,4 +28,4 @@ if (isNaN(inicial) || isNaN(raiz)) {
 }
 
 console.log(progressao.join(', '));
-alert(progressao.join(', '));
+alert(`A P.A. é: ${progressao.join(', ')}`);
