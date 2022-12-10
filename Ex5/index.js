@@ -5,7 +5,7 @@ Calcule o número de pares e impares e exiba o resultado utilizando um alert.
 Realize o commit do exercício resolvido.
 */
 
-let number = prompt('Digite um número');
+let number = parseInt(prompt('Digite um número'));
 let total = 0;
 let pares = 0;
 let impares = 0;
